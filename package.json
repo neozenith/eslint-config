@@ -1,0 +1,31 @@
+{
+  "name": "eslint-config",
+  "version": "1.0.0",
+  "description": "Shareable esLint config",
+  "main": "index.js",
+  "scripts": {
+		"pretest":"npm run test:lint:fix",
+    "test": "echo \"Error: no test specified\" && exit 0",
+		"test:lint": "./node_modules/.bin/eslint *.js",
+		"test:lint:fix": "./node_modules/.bin/eslint --fix *.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neozenith/eslint-config.git"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig"
+  ],
+  "author": "Josh Peak",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/neozenith/eslint-config/issues"
+  },
+  "homepage": "https://github.com/neozenith/eslint-config#readme",
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-plugin-prettier": "^2.6.0",
+    "prettier": "^1.11.1"
+  }
+}
