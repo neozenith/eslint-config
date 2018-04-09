@@ -2,7 +2,7 @@
   "name": "@neozenith/eslint-config",
   "version": "1.0.0",
   "description": "Shareable esLint config",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "pretest": "npm run test:lint:fix",
     "test": "echo \"Error: no test specified\" && exit 0",
