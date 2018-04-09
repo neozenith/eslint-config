@@ -34,6 +34,12 @@ Then add the following to your `package.json`:
 }
 ```
 
+or run the following in your project directory:
+
+```bash
+echo '{"extends":"@neozenith"}' > .eslintrc.json
+```
+
 
 
 ----
