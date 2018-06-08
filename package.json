@@ -4,10 +4,10 @@
   "description": "Shareable esLint config",
   "main": "lib/index.js",
   "scripts": {
-    "pretest": "npm run test:lint",
+    "pretest": "npm run test:lint:fix",
     "test": "echo \"Error: no test specified\" && exit 0",
-    "test:lint": "./node_modules/.bin/eslint lib/*.js test/*.js",
-    "test:lint:fix": "./node_modules/.bin/eslint --fix lib/*.js test/*.js"
+    "test:lint": "./node_modules/.bin/eslint --ignore-path .gitignore .",
+    "test:lint:fix": "npm run test:lint -- --fix"
   },
   "repository": {
     "type": "git",
@@ -27,12 +27,12 @@
     "eslint": "^4.19.1",
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-prettier": "^2.6.0",
-    "prettier": "^1.12.1"
+    "prettier": "^1.13.3"
   },
   "peerDependencies": {
-    "eslint": "^4.19.1",
-    "eslint-config-prettier": "^2.9.0",
-    "eslint-plugin-prettier": "^2.6.0",
-    "prettier": "^1.12.1"
+    "eslint": ">= 4",
+    "eslint-config-prettier": ">= 2",
+    "eslint-plugin-prettier": ">= 2",
+    "prettier": ">= 1"
   }
 }
